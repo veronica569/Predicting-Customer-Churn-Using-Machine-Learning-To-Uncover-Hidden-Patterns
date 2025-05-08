@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | Customer Churn Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="refresh" content="4;url=/form" />
+    <style>
+        body {
+            background: linear-gradient(145deg, #000000, #1a1a1a);
+            color: #ffd700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 215, 0, 0.05);
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+            border: 2px solid #ffd70033;
+            animation: floatIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.3em;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px #000000cc;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #f0e68c;
+            margin: 8px 0;
+        }
+
+        .loader {
+            border: 5px solid #333;
+            border-top: 5px solid #ffd700;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Churn Predictor</h1>
+        <p>Predict customer churn instantly using AI</p>
+        <div class="loader"></div>
+        <p>Redirecting to application...</p>
+    </div>
+</body>
+</html>

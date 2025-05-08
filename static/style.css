@@ -1,0 +1,115 @@
+/* Reset and base styles */
+body {
+    background-color: black !important;
+    color: #FFD700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body h1 {
+    color: #FFD700 !important; /* Golden Yellow */
+}
+
+/* General styling for headings, labels, and paragraphs */
+h1, h3, label, p {
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.container {
+    padding: 30px;
+    background-color: #000;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    height: auto;
+    width: auto;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+/* Form input styles */
+input[type="number"],
+select {
+    background-color: #111;
+    color: #FFD700;
+    border: 2px solid #444;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 8px 2px rgba(255, 215, 0, 0.6);
+    outline: none;
+}
+
+/* Hover glitter effect using animation */
+input[type="number"]:hover,
+select:hover {
+    border-color: #FFD700;
+    box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.8);
+}
+
+/* Custom dropdown styling */
+select.form-select {
+    background-color: #111; /* Dark background */
+    color: #f7f7f7; /* Golden text */
+    border: 2px solid #444; /* Subtle border */
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+select.form-select option {
+    background-color: #111; /* Dark background for options */
+    color: #ffffff; /* Golden text for options */
+}
+
+select.form-select:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 8px 2px rgba(255, 215, 0, 0.6);
+    outline: none;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e6c200;
+    box-shadow: 0 0 12px 3px rgba(255, 215, 0, 0.6);
+}
+
+/* Result section */
+.text-center h3,
+.text-center p {
+    margin-top: 20px;
+    color: #FFD700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .row > div {
+        margin-bottom: 1.5rem;
+    }
+}
